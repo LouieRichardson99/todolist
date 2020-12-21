@@ -1,0 +1,80 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.8rem;
+}
+/* Todo List Input */
+#todo-input-div {
+    text-align: center;
+}
+
+#todo-input {
+    background-color: #e9e9e9;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    width: 15rem;
+    color: #292929;
+    border-radius: 5px 0 0 5px;
+}
+
+#todo-input:focus {
+    outline: none;
+}
+
+#todo-submit {
+    background-color: #df3e3e;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: white;
+    margin-left: -4px;
+    border-radius: 0 5px 5px 0;
+}
+
+#todo-submit:hover {
+    background-color: #c43434;
+}
+
+/* Todo List */ 
+#your-todos-txt {
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.todo-div {
+    display: flex;
+    position: relative;
+    margin: 0.6rem 0 0 0;
+    justify-content: center;
+}
+
+.todo-name {
+    font-size: 1rem;
+    color: #292929;
+    background-color: #e9e9e9;
+    padding: 0.5rem;
+    margin-right: -1px;
+    min-width: 14.5rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.complete-btn {
+    background-color: #33d833;
+    border: none;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.complete-btn:hover {
+    background-color: #2db92d;
+}

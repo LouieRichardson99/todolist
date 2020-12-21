@@ -23,20 +23,24 @@ todoInput.addEventListener('keypress', function keylogger(e) {
 function createTodoElement(todo) {
     let newDiv = document.createElement('div'),
         newTodoName = document.createElement('p'),
-        newBtn = document.createElement('button');
+        newCompleteBtn = document.createElement('button');
 
     newTodoName.textContent = todo;
-    newBtn.textContent = 'Complete';
+    newCompleteBtn.textContent = 'Complete';
 
     todoList.appendChild(newDiv);
     newDiv.appendChild(newTodoName);
-    newDiv.appendChild(newBtn);
+    newDiv.appendChild(newCompleteBtn);
+
 
     const deleteTodo = () => {
-        newBtn.parentElement.remove();
+        newCompleteBtn.parentElement.remove();
     };
 
-    newBtn.addEventListener('click', deleteTodo);
-};
+    newCompleteBtn.addEventListener('click', deleteTodo);
 
+    newDiv.classList.add('todo-div');
+    newTodoName.classList.add('todo-name');
+    newCompleteBtn.classList.add('complete-btn');
+};
 
